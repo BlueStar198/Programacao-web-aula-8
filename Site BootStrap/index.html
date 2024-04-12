@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitao America</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ocultar todos os conteúdos das tabs por padrão */
+        .tab-content > div {
+            display: none;
+        }
+
+        /* Mostrar o conteúdo da tab ativa */
+        .tab-content > .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Capitao America</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card" style="width: 13rem;">
+                <img src="america.jpg" class="product-image" alt="america">
+                <div class="card-body"></div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Detalhes do Produto</h3>
+                        <p>‎Com 24 cm, as figuras Marvel da Hasbro são criadas para crianças para que possam imaginar
+                            muita ação e aventura no universo Marvel. Com design clássico e diversos pontos de
+                            articulação, meninos e meninas vão se divertir recriando momentos favoritos do universo
+                            Marvel e imaginando as suas próprias aventuras também!</p>
+                        <span class="price"><h2>Preço: R$ 99,99</h2></span>
+                        <p for="quantity">Quantidade:</p>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        <button class="btn btn-danger">Adicionar ao Carrinho</button>
+                        <img src="pag.png" alt="paga">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#video">Vídeo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#fotos">Fotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#comentarios">Comentários</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="video" class="tab-pane fade active show">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I3XqwXtR-pU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="fotos" class="tab-pane fade">
+                <img src="america1.jfif" alt="Foto 1">
+                <img src="america2.jfif" alt="Foto 2">
+                <img src="america3.jfif" alt="Foto 3">
+            </div>
+            <div id="comentarios" class="tab-pane fade">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Anderson</h5>
+                        <p class="card-text">Meu filho adorou este boneco.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah</h5>
+                        <p class="card-text">O boneco veio com defeito.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
